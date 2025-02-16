@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajendra - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: rgb(36, 36, 100);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+        height: 80px;
+        background-color: rgb(10, 10, 92);
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+      }
+      nav ul li {
+        margin: 0 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+      }
+      nav ul li a:hover {
+        color: rgb(171, 146, 194);
+        font-size: 1.1rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 80px 0;
+        text-align: center;
+      }
+      .firstSection > div {
+        width: 45%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .rightSection img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white; /* Circular Border */
+      }
+      .purple {
+        color: rgb(154, 70, 232);
+      }
+      #element {
+        color: rgb(154, 70, 232);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        padding: 40px 0;
+      }
+      .secondSection h1 {
+        font-size: 2rem;
+        text-align: center;
+      }
+      .contactSection {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .contactSection h2 {
+        font-size: 2rem;
+      }
+      .contactSection p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+      }
+      .contactSection a {
+        color: #9c97f1;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
+      .contactSection a:hover {
+        text-decoration: underline;
+      }
+      .cv-button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 25px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: white;
+        background: #33fff1; /* Bright orange-red color */
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0px 4px 10px rgba(195, 220, 196, 0.5);
+      }
+      .cv-button:hover {
+        background: #e64a19; /* Darker shade on hover */
+        box-shadow: 0px 6px 15px rgba(255, 87, 51, 0.7);
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Rajendra's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Rajendra</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="images/bg.png.jpg" alt="Rajendra's Profile" />
+        </div>
+      </section>
+      <hr />
+      <section id="about" class="secondSection">
+        <h1>About Me</h1>
+        <p style="text-align: center; font-size: 1.2rem">
+          I am a Full Stack Developer with expertise in front-end and back-end
+          technologies.
+        </p>
+      </section>
+      <hr />
+      <section id="services" class="secondSection">
+        <h1>Services</h1>
+        <p style="text-align: center; font-size: 1.2rem">
+          I offer Front-end Development, Java Programming, and Full Stack Web
+          Development services.
+        </p>
+      </section>
+      <hr />
+      <section id="projects" class="secondSection">
+        <h1>Projects</h1>
+        <p style="text-align: center; font-size: 1.2rem">
+          Some of my recent projects include responsive web applications and
+          interactive UI designs.
+        </p>
+        <div style="text-align: center; margin-top: 20px">
+          <h2>Sustainable Fertilizer Usage Optimizer for Higher Yield</h2>
+          <p style="font-size: 1.1rem">
+            A web-based project designed to optimize fertilizer usage for better
+            crop yield. It utilizes data-driven insights to recommend efficient
+            fertilizer application strategies.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="contact" class="contactSection">
+        <h2>Contact Me</h2>
+        <p>
+          Email:
+          <a href="mailto:rajendralovewanshi1111@gmail.com"
+            >rajendralovewanshi1111@gmail.com</a
+          >
+        </p>
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/rajendralovewanshi"
+            target="_blank"
+            >Rajendra's LinkedIn</a
+          >
+        </p>
+        <a href="Rajendra Resume.docx" class="cv-button" download
+          >📄 Download My CV</a
+        >
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Full Stack Developer</i>",
+          "<i>Web Developer</i>",
+          "<i>Java Programmer</i>",
+        ],
+        typeSpeed: 50,
+        backSpeed: 25,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
